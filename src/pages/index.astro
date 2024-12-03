@@ -34,45 +34,16 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Biohazard Cleanup: Protecting Your Health and Safety"
+    img="file:///C:/Users/HP/Downloads/Biohazard%20Cleanup%20image.webp"
+    desc="https://docs.google.com/document/d/1xhNz8euekki9SiHeSIqB7EQpvKCW4wpe8JJlzwS--uQ/edit?usp=sharing"
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Graphic Design"
+    img="file:///C:/Users/HP/Downloads/graphic-design%20image.webp"
+    desc="https://docs.google.com/document/d/1V_9dm_CCTVX_f3bnGmZB7UtHLrQCeugpNG3UZGi5clg/edit?usp=sharing"
     url="#"
-    badge="FOSS"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
